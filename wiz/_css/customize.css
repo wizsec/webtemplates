@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+
+.brand{
+	background-image: url('../img/wiz_technologies.png');
+	background-repeat: no-repeat;
+	background-position: 0% 20%;
+	background-size: auto 150px;
+	width: 300px;
+	height: 100px;
+	text-indent: -9999px;
+	margin: 0;
+}
+.brand a{
+	display: block;
+	height: 100px;
+}
+
+/* ============================
+	.slide
+============================ */
+
+.slide#ideas{
+	background: url(../img/cloudsbg_bl_gr.jpg) repeat-x top center;
+}
+.slide#showcasing{
+	background: url(../img/cloudsbg_bl.jpg) repeat-x top center;
+}
+.slide#showcasing .info h2{
+	font-size: 36px;
+}
+
+/* ============================
+	#showcase
+============================ */
+
+#showcase{
+	margin: 50px 0;
+}
+#showcase .list{
+	margin: 0;
+	border-top: 1px solid #ccc;
+}
+#showcase .list li{
+	border-bottom: 1px solid #ccc;
+	list-style: none;
+	padding: 5px 10px;
+}
+#showcase .list li span{
+	color: #999;
+	font-size: 0.8em;
+}
+
+.section_header{
+	margin-bottom: 40px;
+}
+
+.section_header h3{
+	font-style: normal;
+	border-bottom: none;
+	font-weight: normal;
+}
+
+#feature_slider_responsive{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++
+	responsive
+++++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 767px){
+
+.navbar{
+	background: url(../img/cloudsbg_mobile.jpg) no-repeat top center;
+}
+.nav-collapse, .nav-collapse.collapse{
+	background: rgba(0,0,0,0.6);
+}
+.navbar.transparent.navbar-inverse .navbar-inner{
+	background: rgba(0, 0, 0, 0.4);
+}
+.brand{
+	width: 70%;
+	height: 80px;
+	background-size: auto 100px;
+}
+.brand a{
+}
+.navbar .btn-navbar{
+	padding: 10px;
+}
+.navbar-fixed-top .navbar-inner{
+	padding: 0;
+}
+#feature_slider_responsive{
+	display: block;
+}	
+#feature_slider_responsive article{
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	padding: 0px 10px 10px 10px;
+	margin: 20px 0;
+}
+#feature_slider_responsive h2{
+	font-size: 24px;
+	text-align: center;
+}
+
+.section_header{
+	margin-bottom: 20px;
+}
+	
+}
