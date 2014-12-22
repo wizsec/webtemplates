@@ -1,5 +1,6 @@
 body {
-	padding-top: 50px;	
+	padding-top: 50px;
+	margin-bottom: 60px;
 }
 
 .info-box {
@@ -55,3 +56,13 @@ h2 {
 	text-align: center;
 }
 
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #ddd;
+}
