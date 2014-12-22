@@ -1,0 +1,57 @@
+body {
+	padding-top: 50px;	
+}
+
+.info-box {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+h1 {
+	color: #656565;
+}
+
+h2 {
+	color: #2fb0b7;
+}
+
+.wiz-header img {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.wiz-header01 {
+	background: url(../images/headerbg01.jpg);
+	background-size: cover;
+}
+
+.wiz-header02 {
+	background: url(../images/headerbg02.jpg);
+	background-size: cover;
+}
+
+.wiz-header03 {
+	background: url(../images/headerbg03.jpg);
+	background-size: cover;
+}
+
+.wiz-header04 {
+	background: url(../images/headerbg04.jpg);
+	background-size: cover;
+}
+
+.wiz-header05 {
+	background: url(../images/headerbg05.jpg);
+	background-size: cover;
+}
+
+
+
+
+
+
+.jumbotron .ourteam h3 {
+	color: #f9a541;
+	text-align: center;
+}
+
