@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3133"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="wizlogo5.svg">
+  <defs
+     id="defs3135">
+    <linearGradient
+       gradientTransform="matrix(0.29639972,0,0,0.29639972,304.28456,-789.29936)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient3944-1"
+       id="linearGradient3950"
+       x1="0"
+       y1="3052.3623"
+       x2="0"
+       y2="3452.3623"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3944-1">
+      <stop
+         style="stop-color:#666666;stop-opacity:1;"
+         offset="0"
+         id="stop3946-7" />
+      <stop
+         style="stop-color:#222222;stop-opacity:1;"
+         offset="1"
+         id="stop3948-4" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#coin-gradient-0"
+       id="linearGradient3970"
+       gradientUnits="userSpaceOnUse"
+       x1="1010"
+       y1="822.36218"
+       x2="1010"
+       y2="892.36218"
+       gradientTransform="matrix(3.7947594,0,0,3.7947594,-4345.033,-304.84671)" />
+    <linearGradient
+       y2="63.996323"
+       x2="0.0004394635"
+       y1="-0.00059563987"
+       x1="0.0004394635"
+       id="coin-gradient-0"
+       gradientTransform="scale(0.99994167,1.0000583)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         id="stop12-9"
+         style="stop-color:#f9aa4b"
+         offset="0%" />
+      <stop
+         id="stop14-4"
+         style="stop-color:#f7931a"
+         offset="100%" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3975"
+       id="linearGradient3966"
+       gradientUnits="userSpaceOnUse"
+       x1="1000"
+       y1="872.36218"
+       x2="1000"
+       y2="1052.3622"
+       gradientTransform="matrix(3.7947594,0,0,3.7947594,-4345.033,-304.84671)" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(0.99994167,1.0000583)"
+       id="linearGradient3975"
+       x1="0.0004394635"
+       y1="-0.00059563987"
+       x2="0.0004394635"
+       y2="63.996323">
+      <stop
+         offset="0"
+         style="stop-color:#f89d2e;stop-opacity:1;"
+         id="stop3977" />
+      <stop
+         offset="1"
+         style="stop-color:#d17607;stop-opacity:1;"
+         id="stop3979" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#coin-gradient-0"
+       id="linearGradient3962"
+       gradientUnits="userSpaceOnUse"
+       x1="1000"
+       y1="882.36218"
+       x2="1000"
+       y2="1042.3622"
+       gradientTransform="matrix(3.7947594,0,0,3.7947594,-4345.033,-304.84671)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="375"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="928"
+     inkscape:window-height="814"
+     inkscape:window-x="75"
+     inkscape:window-y="195"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3138">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.29639972,0,0,0.29639972,304.28456,-789.29937)"
+       id="g3972"
+       inkscape:export-filename="C:\Users\Kim\Projects\wizsec\webtemplates\html\assets\images\wizlogo4.png"
+       inkscape:export-xdpi="21.959999"
+       inkscape:export-ydpi="21.959999">
+      <path
+         sodipodi:nodetypes="zccsccz"
+         inkscape:connector-curvature="0"
+         id="path3942"
+         d="m -550.2736,2819.6147 c -170.76417,0 -246.65936,147.9956 -257.09495,241.6787 47.58932,-2.3259 72.35339,-7.0179 105.30457,-14.3997 18.9738,-75.8952 70.17129,-136.2048 151.79038,-136.2048 81.6192,0 132.81658,60.3096 151.79038,136.2048 32.95141,7.3818 57.71525,12.0738 105.30457,14.3997 -10.43559,-93.6831 -86.33078,-241.6787 -257.09495,-241.6787 z"
+         style="fill:url(#linearGradient3970);fill-opacity:1;stroke:none" />
+      <path
+         style="fill:url(#linearGradient3966);fill-opacity:1;stroke:none"
+         d="m -853.85435,3081.4531 c 0,569.2139 303.58075,607.1615 303.58075,607.1615 0,0 303.58075,-37.9476 303.58075,-607.1615 -227.68556,0 -303.58075,-75.8952 -303.58075,-75.8952 0,0 -75.89519,75.8952 -303.58075,75.8952 z"
+         id="path3930"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path3938"
+         d="m -834.88056,3100.4269 c 0,531.2663 284.60696,569.2139 284.60696,569.2139 0,0 284.60695,-37.9476 284.60695,-569.2139 -227.68556,0 -284.60695,-75.8952 -284.60695,-75.8952 0,0 -56.92139,75.8952 -284.60696,75.8952 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:url(#linearGradient3962);fill-opacity:1;stroke:none"
+         d="m -815.90676,3119.4007 c 0,493.3188 265.63316,531.2663 265.63316,531.2663 0,0 265.63316,-37.9475 265.63316,-531.2663 -227.68557,0 -265.63316,-75.8952 -265.63316,-75.8952 0,0 -37.94759,75.8952 -265.63316,75.8952 z"
+         id="path3940"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3951"
+         d="m -411.99978,3292.9796 c 6.24504,-41.745 -25.53911,-64.1865 -69.00011,-79.1572 l 14.09791,-56.5491 -34.4215,-8.5784 -13.72565,55.0589 c -9.04898,-2.2549 -18.34348,-4.3822 -27.57879,-6.4902 l 13.82355,-55.4217 -34.40192,-8.5788 -14.10793,56.5298 c -7.49025,-1.7058 -14.8432,-3.3922 -21.9805,-5.1666 l 0.0391,-0.1746 -47.47081,-11.8529 -9.15691,36.7648 c 0,0 25.53934,5.853 25.0001,6.2158 13.94127,3.4802 16.46087,12.706 16.03931,20.0196 l -16.05889,64.4218 c 0.9608,0.2466 2.2059,0.598 3.57842,1.1471 -1.14704,-0.2846 -2.37256,-0.598 -3.63724,-0.902 l -22.50994,90.2455 c -1.70589,4.2353 -6.02942,10.5885 -15.77459,8.1765 0.34305,0.5002 -25.01972,-6.245 -25.01972,-6.245 l -17.08833,39.4021 44.79436,11.1669 c 8.33337,2.0882 16.50007,4.2744 24.53935,6.3334 l -14.24519,57.196 34.38253,8.5785 14.10789,-56.5885 c 9.39222,2.5493 18.50993,4.9021 27.43152,7.1178 l -14.0589,56.3236 34.42173,8.5784 14.24549,-57.0882 c 58.6962,11.1079 102.83381,6.6274 121.41219,-46.4611 14.97071,-42.7453 -0.74529,-67.4022 -31.6278,-83.4806 22.4904,-5.1863 39.43172,-19.9805 43.95128,-50.5397 z m -78.64752,110.2848 c -10.63709,42.7453 -82.60808,19.6375 -105.94153,13.8433 l 18.90204,-75.7749 c 23.33348,5.8238 98.15737,17.353 87.03949,61.9316 z m 10.64733,-110.9022 c -9.70585,38.8826 -69.60841,19.1275 -89.0397,14.2842 l 17.13732,-68.7257 c 19.43148,4.8432 82.0101,13.8823 71.90238,54.4415 z"
+         style="fill:#ffffff" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:177.83982849px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3950);fill-opacity:1;stroke:none;font-family:Tw Cen MT;-inkscape-font-specification:Tw Cen MT Bold Oblique"
+       x="246.45651"
+       y="237.90848"
+       id="text3922"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\Kim\Projects\wizsec\webtemplates\html\assets\images\wizlogo4.png"
+       inkscape:export-xdpi="21.959999"
+       inkscape:export-ydpi="21.959999"><tspan
+         sodipodi:role="line"
+         id="tspan3924"
+         x="246.45651"
+         y="237.90848"
+         style="font-style:oblique;font-weight:bold;fill:url(#linearGradient3950);fill-opacity:1;font-family:Tw Cen MT;-inkscape-font-specification:Tw Cen MT Bold Oblique"
+         dx="0 -8.8919916 -11.855989 -4.4459958">W<tspan
+   style="font-size:157.09185791px;font-style:oblique;font-weight:bold;fill:url(#linearGradient3950);fill-opacity:1;font-family:Tw Cen MT;-inkscape-font-specification:Tw Cen MT Bold Oblique"
+   id="tspan3926"
+   dx="-11.855989 -8.8919916">IZ</tspan>S<tspan
+   style="font-size:157.09185791px;font-style:oblique;font-weight:bold;fill:url(#linearGradient3950);fill-opacity:1;font-family:Tw Cen MT;-inkscape-font-specification:Tw Cen MT Bold Oblique"
+   id="tspan3930"
+   dx="-7.4099932 -7.4099932">EC</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:42.68156052px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;font-family:Liberation Sans Narrow;-inkscape-font-specification:Liberation Sans Narrow"
+       x="268.94827"
+       y="275.93338"
+       id="text3934"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\Kim\Projects\wizsec\webtemplates\html\assets\images\wizlogo4.png"
+       inkscape:export-xdpi="21.959999"
+       inkscape:export-ydpi="21.959999"><tspan
+         sodipodi:role="line"
+         id="tspan3936"
+         x="268.94827"
+         y="275.93338"
+         style="font-size:42.68156052px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;word-spacing:0px;text-anchor:start;font-family:Liberation Sans Narrow;-inkscape-font-specification:Liberation Sans Narrow">Bitcoin Security Specialists</tspan></text>
+  </g>
+</svg>
