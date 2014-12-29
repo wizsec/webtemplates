@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
   <servlet>
-    <servlet-name>partial1</servlet-name>
-    <servlet-class>com.google.appengine.samples.Partial1Servlet</servlet-class>
+    <servlet-name>helloWorld</servlet-name>
+    <servlet-class>com.wizsec.appengine.fafa.HelloWorldServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>partial1</servlet-name>
-    <url-pattern>/partial1</url-pattern>
+    <servlet-name>helloWorld</servlet-name>
+	<url-pattern>/api/helloworld</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>
