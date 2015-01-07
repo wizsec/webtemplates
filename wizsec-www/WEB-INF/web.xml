@@ -25,14 +25,22 @@
 	<url-pattern>/api/listdevices</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+  <servlet>
     <servlet-name>sendmessage</servlet-name>
     <servlet-class>com.wizsec.appengine.fafa.SendMessageServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>sendmessage</servlet-name>
 	<url-pattern>/api/sendmessage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sendbtc</servlet-name>
+    <servlet-class>com.wizsec.appengine.fafa.SendBtc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sendbtc</servlet-name>
+	<url-pattern>/api/sendbtc</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>
