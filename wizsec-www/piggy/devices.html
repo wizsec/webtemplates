@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class=" -moz-"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+  <title>Test GCMt</title>
+
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto|Allura);
+
+body{
+  background: #EEE;
+}
+body, input{
+  font-family: "Roboto";
+  font-size: 1em;
+}
+h1, .credit{
+  font-family: "Roboto Slab";
+}
+.credit{
+  text-align: center;
+  font-size: 0.7em;
+  padding: 10px;
+}
+
+.item{
+  width: 60px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.button{
+  background: #0099CC;
+  padding: 4px;
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px 5px;
+}
+.button:hover{
+  background: #33B5E5;
+}
+.checkout{
+  margin: 0 auto;
+  width: 720px;
+}
+.loader{
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+.addr input{
+  width: 100%;
+  outline: none;
+  border: 0px solid;
+  padding: 5px;
+}
+table {
+	width: 100%;
+}
+  </style>
+
+</head>
+
+<body>
+
+   <div class="checkout">
+  <h1>All devices <img src="ajax-loader.gif" class="loader" /></h1>
+  <div>
+		<table class="" id="devicetable">
+			<thead>
+				<tr>
+					<th>regID</th>
+					<th>-</th>
+					<th>-</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+  
+  </div>
+
+  <div id="plog"></div>
+   <div class="credit">
+     Wizsec
+   </div>
+</div>
+  <script src="../js/jquery.min.js"></script>
+
+
+  <script>
+  
+  $(document).ready(function(){
+	 	$(".loader").show();
+	    
+	    $.ajax({
+		      url: "/api/listdevices",
+		      type: "GET",
+		      cache: false,
+		      data: { },
+		      statusCode: {
+			      200: function (response) {
+			    	  
+			        console.log(response);
+			        
+			        if (response.status == 200)
+			        {
+			        	for (var device in response.devices) {
+				        	$("#devicetable").find('tbody')
+				            .append($('<tr>')
+				                .append($('<td>')
+				                    .html('<input type="text" value="' + response.devices[device] +'" />')
+				                )
+				                .append($('<td>')
+				                    .html('<div class="button unreg" data-val="' + response.devices[device] +'"> Unregister</div>')
+				                )
+				                .append($('<td>')
+				                    .html('<div class="button spend" data-val="' + response.devices[device] +'"> Spend 0.001 BTC</div>')
+				                )
+				            );
+			        	}
+			        	
+				        $(".loader").hide();
+					} else if (response.status == 403)
+			        {
+				        $(".loader").hide();
+					} else {
+					}
+			       
+			      },
+			      500: function (response) {
+			    	  
+			      },
+			      404: function (response) {
+			    	// Something
+			      }
+			    },
+			    complete: function(e, xhr, settings){
+				        $(".loader").hide();
+			    },
+			    success: function(){
+			    	// NOP
+			    },
+			    error: function(){
+			    	// NOP
+			    },
+			    fail: function(){
+			    	// NOP
+			    }
+		    });
+	    
+  	});
+
+  	$('table').on('click', '.spend', function() {
+		console.log($(this).data('val'));
+  		
+  		var regId = $(this).data('val');
+  		var tr = $(this).parent().parent();
+  		
+  		$.ajax({
+		      url: "/api/sendmessage",
+		      type: "POST",
+		      beforeSend: function (request)
+	          {
+	                request.setRequestHeader("X-AppEngine-QueueName", "0");
+	          },
+		      cache: false,
+		      data: { device: regId },
+		      statusCode: {
+			      200: function (response) {
+			    	  console.log(response);
+			    	  
+			    	  if (response.status == 200)
+			    	  {
+			    		  $('#plog').append($('<p>').html(response.message));
+			    	  } else if (response.status == 500)
+			    	  {
+			    		  $('#plog').append($('<p>').html(response.message));
+			    		  $(tr).hide(500);
+			    	  }
+			      },
+			      500: function (response) {
+			    	  alert('Server error 500');
+			      },
+			    },
+			    complete: function(e, xhr, settings){
+				        $(".loader").hide();
+			    },
+			    success: function(){
+			    	// NOP
+			    },
+			    error: function(){
+			    	// NOP
+			    },
+			    fail: function(){
+			    	// NOP
+			    }
+		    });
+	    
+	});
+	
+  	$('table').on('click', '.unreg', function() {
+  		console.log($(this).data('val'));
+  		
+  		var regId = $(this).data('val');
+  		var tr = $(this).parent().parent();
+  		
+  		$.ajax({
+		      url: "/api/unregisterdevice",
+		      type: "POST",
+		      cache: false,
+		      data: { regid: regId },
+		      statusCode: {
+			      200: function (response) {
+			    	  $(tr).hide(500);
+			      },
+			      500: function (response) {
+			    	  alert('Server error 500');
+			      },
+			    },
+			    complete: function(e, xhr, settings){
+				        $(".loader").hide();
+			    },
+			    success: function(){
+			    	// NOP
+			    },
+			    error: function(){
+			    	// NOP
+			    },
+			    fail: function(){
+			    	// NOP
+			    }
+		    });
+	});
+	
+  </script>
+
+
+
+
+</body></html>

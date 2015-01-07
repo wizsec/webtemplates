@@ -12,6 +12,28 @@
     <servlet-name>helloWorld</servlet-name>
 	<url-pattern>/api/helloworld</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>devicehandler</servlet-name>
+    <servlet-class>com.wizsec.appengine.fafa.DeviceHandler</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>devicehandler</servlet-name>
+	<url-pattern>/api/registerdevice</url-pattern>
+	<url-pattern>/api/unregisterdevice</url-pattern>
+	<url-pattern>/api/listdevices</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>sendmessage</servlet-name>
+    <servlet-class>com.wizsec.appengine.fafa.SendMessageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sendmessage</servlet-name>
+	<url-pattern>/api/sendmessage</url-pattern>
+  </servlet-mapping>
 
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
