@@ -40,6 +40,15 @@ h1, .credit{
   margin-bottom: 20px;
   border-radius: 5px 5px;
 }
+.button-loading {
+  background: #AAAAAA;
+  padding: 4px;
+  color: #FFF;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px 5px;
+}
 .button:hover{
   background: #33B5E5;
 }
@@ -68,20 +77,16 @@ table {
 <body>
 
    <div class="checkout">
-  <h1>All devices <img src="ajax-loader.gif" class="loader" /></h1>
+  <h1>Spend coins from multisig wallet <img src="ajax-loader.gif" class="loader" /></h1>
   <div>
-  <input type="text" width="250" placeholder="Bitcoin address" />
-  <input type="text" width="250" placeholder="amount" />
+  Address: 2MzVz9YknU1NGiKgqGVFZrcYiN5rxhhjoYZ<br />
+  <a href="http://tbtc.blockr.io/address/info/2MzVz9YknU1NGiKgqGVFZrcYiN5rxhhjoYZ">View transactions here</a><br /> <br />
+  <input type="text" width="250" placeholder="Bitcoin address" id="addressInput" />
+  <input type="text" width="250" placeholder="amount" id="amountInput" /> BTC
   </div>
   <div>
+  <h1>Device list:</h1>
 		<table class="" id="devicetable">
-			<thead>
-				<tr>
-					<th>regID</th>
-					<th>-</th>
-					<th>-</th>
-				</tr>
-			</thead>
 			<tbody>
 			</tbody>
 		</table>
@@ -123,7 +128,7 @@ table {
 				                    .html('<div class="button unreg" data-val="' + response.devices[device] +'"> Unregister</div>')
 				                )
 				                .append($('<td>')
-				                    .html('<div class="button spend" data-val="' + response.devices[device] +'"> Spend 0.001 BTC</div>')
+				                    .html('<div class="button spend" data-val="' + response.devices[device] +'"> Spend BTC</div>')
 				                )
 				            );
 			        	}
@@ -161,19 +166,22 @@ table {
 
   	$('table').on('click', '.spend', function() {
 		console.log($(this).data('val'));
+		$(".loader").show();
+  		$(this).addClass( "button-loading" );
+  		$(this).removeClass( "button" );
   		
+  		var thisButton = $(this);
+		
   		var regId = $(this).data('val');
   		var tr = $(this).parent().parent();
+  		var address = $('#addressInput').val();
+  		var amount = $('#amountInput').val();
   		
   		$.ajax({
-		      url: "/api/sendmessage",
+		      url: "/api/sendbtc",
 		      type: "POST",
-		      beforeSend: function (request)
-	          {
-	                request.setRequestHeader("X-AppEngine-QueueName", "0");
-	          },
 		      cache: false,
-		      data: { device: regId },
+		      data: { device: regId, address: address, amount: amount },
 		      statusCode: {
 			      200: function (response) {
 			    	  console.log(response);
@@ -181,10 +189,9 @@ table {
 			    	  if (response.status == 200)
 			    	  {
 			    		  $('#plog').append($('<p>').html(response.message));
-			    	  } else if (response.status == 500)
+			    	  } else
 			    	  {
 			    		  $('#plog').append($('<p>').html(response.message));
-			    		  $(tr).hide(500);
 			    	  }
 			      },
 			      500: function (response) {
@@ -193,6 +200,8 @@ table {
 			    },
 			    complete: function(e, xhr, settings){
 				        $(".loader").hide();
+				        thisButton.addClass( "button" );
+				        thisButton.removeClass( "button-loading" );
 			    },
 			    success: function(){
 			    	// NOP
